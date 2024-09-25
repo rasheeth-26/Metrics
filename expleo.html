@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expleo Feedback Form</title>
+    <link rel="stylesheet" href="expleo.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Expleo Feedback / Query Form</h1>
+        <form action="/submit-feedback" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="ABDUL RASHEETH NOORUL HAMEEM" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="abdulrasheeth.noorulhameem@expleogroup.com" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Feedback / Query</label>
+                <textarea id="feedback" name="feedback" placeholder="Give us your valuable feedback" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="priority">Priority</label>
+                <select id="priority" name="priority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
